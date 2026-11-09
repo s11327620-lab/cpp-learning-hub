@@ -4,42 +4,179 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>首頁 | C++ Learning Hub</title>
+
 <style>
-:root{--p:#1f3a5f;--a:#3f6ea7;--bg:#f5f7fa;--c:#fff;--t:#1f2937;--m:#667085;--b:#e5e7eb}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans TC",sans-serif;background:var(--bg);color:var(--t);line-height:1.7}
-header{background:var(--p);color:#fff;padding:18px 0}.wrap{width:min(1050px,calc(100% - 32px));margin:auto}
-nav{display:flex;justify-content:space-between}nav a{color:#fff;text-decoration:none}.hero{padding:60px 0 30px}
-.hero h1{font-size:clamp(34px,6vw,56px);margin:0 0 12px}.hero p{color:var(--m);max-width:720px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding:18px 0 48px}
-.card{background:var(--c);border:1px solid var(--b);border-radius:18px;padding:22px;box-shadow:0 8px 24px rgba(31,58,95,.06)}
-.tag{display:inline-block;background:#eaf1f8;color:var(--p);padding:4px 10px;border-radius:999px;font-size:13px}
-.button{display:inline-block;margin-top:10px;background:var(--a);color:#fff;text-decoration:none;padding:10px 14px;border-radius:10px}
-footer{text-align:center;color:var(--m);padding:30px}@media(max-width:700px){.grid{grid-template-columns:1fr}}
+:root {
+    --p: #1f3a5f;
+    --a: #3f6ea7;
+    --bg: #f5f7fa;
+    --c: #ffffff;
+    --t: #1f2937;
+    --m: #667085;
+    --b: #e5e7eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Noto Sans TC", sans-serif;
+    background: var(--bg);
+    color: var(--t);
+    line-height: 1.7;
+}
+
+header {
+    background: var(--p);
+    color: white;
+    padding: 18px 0;
+}
+
+.wrap {
+    width: min(1050px, calc(100% - 32px));
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 60px 0 30px;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 6vw, 56px);
+    margin: 0 0 12px;
+}
+
+.hero p {
+    color: var(--m);
+    max-width: 720px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    padding: 18px 0 48px;
+}
+
+.card {
+    background: var(--c);
+    border: 1px solid var(--b);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 8px 24px rgba(31, 58, 95, 0.06);
+}
+
+.tag {
+    display: inline-block;
+    background: #eaf1f8;
+    color: var(--p);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--a);
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    color: var(--m);
+    padding: 30px;
+}
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 </head>
+
 <body>
-<header><div class="wrap"><nav><strong>C++ Learning Hub</strong><a href="AGENTS.md">AGENTS.md</a></nav></div></header>
+
+<header>
+    <div class="wrap">
+        <nav>
+            <strong>C++ Learning Hub</strong>
+            <a href="AGENTS.md">AGENTS.md</a>
+        </nav>
+    </div>
+</header>
+
 <main class="wrap">
+
 <section class="hero">
-<span class="tag">C++ 初學者筆記</span>
-<h1>把每次上課內容整理成可以持續延伸的學習網站</h1>
-<p>這個網站整理 C++ 課程中的語法、Lab 重點與 Exercise。每一個新頁面都會依照 AGENTS.md 的規則維持一致的結構與風格。</p>
+    <span class="tag">C++ 初學者筆記</span>
+
+    <h1>
+        把每次上課內容整理成可以持續延伸的學習網站
+    </h1>
+
+    <p>
+        這個網站整理 C++ 課程中的語法、Lab 重點與 Exercise。
+        每一個新頁面都會依照 AGENTS.md 的規則維持一致的結構與風格。
+    </p>
 </section>
+
 <section class="grid">
-<article class="card">
-<span class="tag">Lab 09</span>
-<h2>cStrings & Class string</h2>
-<p>整理 C-String、class string、find、substr、strlen、strcmp 等常用字串操作。</p>
-<a class="button" href="pages/lab-09-strings.html">查看筆記</a>
-</article>
-<article class="card">
-<span class="tag">可延伸</span>
-<h2>下一個 Lab</h2>
-<p>之後可以依照 AGENTS.md 規則繼續新增 Arrays、Pointers、Functions 或其他內容。</p>
-<a class="button" href="AGENTS.md">查看專案規則</a>
-</article>
+
+    <article class="card">
+        <span class="tag">Lab 09</span>
+
+        <h2>cStrings & Class string</h2>
+
+        <p>
+            整理 C-String、class string、find、substr、
+            strlen、strcmp 等常用字串操作。
+        </p>
+
+        <a class="button" href="lab-09-strings.html">
+            查看筆記
+        </a>
+    </article>
+
+    <article class="card">
+        <span class="tag">可延伸</span>
+
+        <h2>下一個 Lab</h2>
+
+        <p>
+            之後可以依照 AGENTS.md 規則繼續新增
+            Arrays、Pointers、Functions 或其他內容。
+        </p>
+
+        <a class="button" href="AGENTS.md">
+            查看專案規則
+        </a>
+    </article>
+
 </section>
+
 </main>
-<footer>© 2026 C++ Learning Hub</footer>
+
+<footer>
+    © 2026 C++ Learning Hub
+</footer>
+
 </body>
 </html>
