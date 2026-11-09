@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab 09 Strings | C++ Learning Hub</title>
+<style>
+body{margin:0;font-family:Arial,"Noto Sans TC",sans-serif;background:#f5f7fa;color:#1f2937;line-height:1.75}
+header{background:#1f3a5f;color:#fff;padding:18px 0}.wrap{width:min(900px,calc(100% - 32px));margin:auto}
+nav{display:flex;justify-content:space-between}nav a{color:#fff;text-decoration:none}main{padding:40px 0}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:22px;margin-bottom:18px}
+.code-block{background:#111827;color:#fff;padding:16px;border-radius:12px;overflow:auto;white-space:pre-wrap;font-family:Consolas,monospace}
+.button{display:inline-block;background:#3f6ea7;color:#fff;text-decoration:none;padding:10px 14px;border-radius:10px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><strong>C++ Learning Hub</strong><a href="../index.html">回首頁</a></nav></div></header>
+<main class="wrap">
+<h1>Lab 09：cStrings & Class string</h1>
+<section class="card"><h2>學習目標</h2><ul><li>了解 C-String 與 class string。</li><li>會使用 strlen、strcpy、strcmp。</li><li>會使用 find、substr、getline。</li></ul></section>
+<section class="card"><h2>C-String 重點</h2><p>C-String 使用 char 陣列儲存文字，最後以 \0 結束。</p><div class="code-block">char text[20] = "Programming";
+cout &lt;&lt; strlen(text) &lt;&lt; endl;</div></section>
+<section class="card"><h2>class string 重點</h2><div class="code-block">string str = "I love nycu";
+int pos = str.find("nycu");</div></section>
+<section class="card"><h2>Exercise：Longest Word</h2><div class="code-block">string word;
+int maxLength = 0;
+for (int i = 0; i &lt; 10; i++) {
+    cin &gt;&gt; word;
+    if (word.length() &gt; maxLength) {
+        maxLength = word.length();
+    }
+}</div></section>
+<section class="card"><h2>常見錯誤</h2><ul><li>find 找不到會得到 string::npos。</li><li>substr 第二個參數是長度。</li><li>getline 前要注意換行字元。</li></ul></section>
+<a class="button" href="../index.html">← 回首頁</a>
+</main>
+</body>
+</html>
